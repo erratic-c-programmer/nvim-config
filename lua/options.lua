@@ -9,7 +9,8 @@ vim.o.shortmess = "c"
 vim.o.signcolumn = "yes:2"
 vim.o.splitbelow = true
 vim.o.splitright = true
-vim.o.undofile = true
+vim.o.undofile = true  -- persistent undo
+vim.o.laststatus = 3  -- global statusline!
 
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
