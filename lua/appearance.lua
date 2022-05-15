@@ -1,5 +1,4 @@
 vim.o.termguicolors = true
- -- ho
 
 require('nightfox').setup({
   options = {
@@ -14,6 +13,11 @@ require('nightfox').setup({
       visual = false,
       search = false,
     },
+  },
+  palettes = {
+    duskfox = {
+      bg1 = "#272822"
+    }
   }
 })
 vim.cmd("colorscheme duskfox")
