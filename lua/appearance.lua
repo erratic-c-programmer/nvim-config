@@ -1,10 +1,11 @@
 vim.o.termguicolors = true
+ -- ho
 
 require('nightfox').setup({
   options = {
     transparent = false,
     styles = {
-      comments = "italic",
+      comments = "bold",
       keywords = "bold",
       types = "italic,bold",
     },
