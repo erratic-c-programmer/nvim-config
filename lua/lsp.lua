@@ -11,4 +11,5 @@ for k, v in pairs(servers) do
 	)
 end
 
-vim.cmd("autocmd CursorHold * lua vim.lsp.util.show_line_diagnostics()")
+vim.cmd("autocmd CursorHold * lua vim.diagnostic.open_float { focusable = false }")
+vim.cmd("autocmd CursorHoldI * lua vim.diagnostic.open_float { focusable = false }")

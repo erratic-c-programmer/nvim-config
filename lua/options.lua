@@ -3,6 +3,7 @@ u = require("util")
 vim.o.clipboard = "unnamedplus"
 vim.o.cmdheight = 1
 vim.o.hidden = true
+vim.o.laststatus = 3  -- global statusline!
 vim.o.mouse = "a"
 vim.o.number = true
 vim.o.shortmess = "c"
@@ -10,7 +11,7 @@ vim.o.signcolumn = "yes:1"
 vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.undofile = true  -- persistent undo
-vim.o.laststatus = 3  -- global statusline!
+vim.o.updatetime = 300
 
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
@@ -26,6 +27,6 @@ u.ft_autocmd_("haskell", u.au_indent(2))
 u.ft_autocmd_("rst", u.au_indent(3))
 u.ft_autocmd_("lua", u.au_indent(2))
 -- this special one
-vim.cmd("autocmd BufWritePost ~/.config/nvim/* :silent exec '!git add .config/nvim/; git commit -m \"$(date)\"; git push'")
+vim.cmd("autocmd BufWritePost ~/.config/nvim/* :silent exec '! (cd ~/.config/nvim/; git add .; git commit -m \"$(date)\"; git push)'")
 
 vim.g.coq_settings = { display = { pum = { fast_close = false }}}
