@@ -10,3 +10,5 @@ for k, v in pairs(servers) do
 		})
 	)
 end
+
+vim.cmd("autocmd CursorHold * lua vim.lsp.util.show_line_diagnostics()")
