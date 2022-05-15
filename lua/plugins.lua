@@ -1,6 +1,7 @@
 return require('packer').startup(function()
   use "EdenEast/nightfox.nvim"
   use { "feline-nvim/feline.nvim", requires={ "kyazdani42/nvim-web-devicons" } }
+  use "lewis6991/gitsigns.nvim"
   use "LionC/nest.nvim"
   use { "ms-jpq/coq_nvim", branch="coq" }
   use "neovim/nvim-lspconfig"
