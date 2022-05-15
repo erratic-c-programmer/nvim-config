@@ -17,6 +17,6 @@ require('nightfox').setup({
 })
 vim.cmd("colorscheme duskfox")
 
-local spec = require('nightfox.spec').load("duskfox")
+local spec = require('nightfox.spec').load("nightfox")
 vim.cmd("hi FloatermBorder guibg=" .. spec.palette.bg0)
 print("hi FloatermBorder guibg=" .. spec.palette.bg0)
