@@ -23,6 +23,7 @@ u.ft_autocmd_("typescript", u.au_indent(2))
 u.ft_autocmd_("css", u.au_indent(2))
 u.ft_autocmd_("haskell", u.au_indent(2))
 u.ft_autocmd_("rst", u.au_indent(3))
+u.ft_autocmd_("lua", u.au_indent(2))
 -- this special one
 vim.cmd("autocmd BufWritePost ~/.config/nvim/* :silent exec '!git add .; git commit -m \"$(date)\"; git push'")
 
