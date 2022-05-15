@@ -16,7 +16,7 @@ require('nightfox').setup({
   },
   palettes = {
     duskfox = {
-      bg1 = "#272822"
+      -- bg1 = "#272822"
     }
   }
 })
