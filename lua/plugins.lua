@@ -1,5 +1,6 @@
 return require('packer').startup(function()
   use "EdenEast/nightfox.nvim"
+  use "feline-nvim/feline.nvim"
   use "LionC/nest.nvim"
   use { "ms-jpq/coq_nvim", branch="coq" }
   use "neovim/nvim-lspconfig"
