@@ -4,6 +4,6 @@ require("appearance")
 require("mappings")
 require("options")
 require("lsp")
-require("feline")
+require("pluginconfig")
 
 vim.cmd("COQnow -s")
