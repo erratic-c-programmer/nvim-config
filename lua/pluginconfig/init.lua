@@ -1,5 +1,7 @@
 local paths = vim.split(vim.fn.glob("./*"), "\n")
 
 for i, file in pairs(paths) do
-  vim.cmd("source " .. file)
+  if file ~= "init.lua"
+    vim.cmd("source " .. file)
+  end
 end
