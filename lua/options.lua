@@ -29,4 +29,7 @@ u.ft_autocmd_("lua", u.au_indent(2))
 -- this special one
 vim.cmd("autocmd BufWritePost ~/.config/nvim/* :silent exec '! (cd ~/.config/nvim/; git add .; git commit -m \"$(date)\"; git push)'")
 
+-- wrap only at words for text files
+vim.cmd("autocmd BufNewFile,BufRead * if empty(&filetype) | :set linebreak | endif")
+
 vim.g.coq_settings = { display = { pum = { fast_close = false }}}
