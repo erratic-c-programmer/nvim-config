@@ -1,6 +1,6 @@
 local nest = require("nest")
 
-vim.g.mapleader = ";"
+vim.g.mapleader = " "
 nest.applyKeymaps {
 	{ "<Left>", "<C-w>h" },
 	{ "<Down>", "<C-w>j" },
