@@ -31,6 +31,6 @@ vim.cmd("autocmd BufWritePost ~/.config/nvim/* :silent exec '! (cd ~/.config/nvi
 
 -- wrap only at words for text files
 vim.cmd("autocmd BufEnter * if empty(&filetype) | :set linebreak | endif")
-vim.cmd("autocmd FileType text :set linebreak")
+vim.cmd("autocmd FileType text,html,tex :set linebreak")
 
 vim.g.coq_settings = { display = { pum = { fast_close = false }}}
