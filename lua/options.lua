@@ -28,6 +28,9 @@ u.ft_autocmd_("rst", u.au_indent(3))
 u.ft_autocmd_("lua", u.au_indent(2))
 -- this special one
 vim.cmd("autocmd BufWritePost ~/.config/nvim/* :silent exec '! (cd ~/.config/nvim/; git add .; git commit -m \"$(date)\"; git push)'")
+-- another special one
+vim.cmd("autocmd FileType scheme inoremap <leader><space> λ")
+
 
 -- wrap only at words for text files, long-line handling...
 local wrapmapstr = ":nnoremap j gj| :nnoremap k gk| :nnoremap 0 g0| :nnoremap $ g$| :nnoremap ^ g^| :nnoremap A g$a| :vnoremap j gj| :vnoremap k gk| :vnoremap 0 g0| :vnoremap $ g$| :vnoremap ^ g^"
