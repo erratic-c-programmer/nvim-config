@@ -10,7 +10,7 @@ nest.applyKeymaps {
 	{ "<S-Down>", "<C-w>s" },
 	{ "<S-Up>", "<C-w>s<C-w>k" },
 	{ "<S-Right>", "<C-w>v" },
-	{ "<C-l>", "<C-o>zz", mode="i"},
+	{ "<C-m>", "<C-o>zz", mode="i"},
 
 	{ "<C-t>", "<Cmd>FloatermToggle<CR>", mode="tn" },
 	{ "<Esc>", "<C-\\><C-n>", mode="t" },
