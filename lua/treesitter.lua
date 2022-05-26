@@ -5,4 +5,11 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
     additional_vim_regex_highlighting = false,
   },
+
+  rainbow = {
+    enable = true,
+    -- disable = { "jsx", "cpp" },
+    extended_mode = true,
+    max_file_lines = nil,
+  }
 }
