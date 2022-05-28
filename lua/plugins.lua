@@ -6,7 +6,7 @@ return require('packer').startup(function()
     config=function() require('feline').setup() end
   }
   use "LionC/nest.nvim"
-  use { "ms-jpq/coq_nvim", branch="coq", requires={ "ms-jpq/coq.artifacts" } }
+  use { "ms-jpq/coq_nvim", branch="coq", requires={ "ms-jpq/coq.artifacts" }, run={ ":COQdeps" } }
   use "neovim/nvim-lspconfig"
   use { "nvim-treesitter/nvim-treesitter", run=":TSUpdate" }
   use { "p00f/nvim-ts-rainbow" }
