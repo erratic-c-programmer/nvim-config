@@ -1,5 +1,5 @@
 local coq = require "coq"
-local servers = { "clangd", "pyright", "tsserver", "rust_analyzer" }
+local servers = { "clangd", "pyright", "tsserver", "rust_analyzer", "hls" }
 for k, v in pairs(servers) do
 	require('lspconfig')[v].setup(
 		coq.lsp_ensure_capabilities({
