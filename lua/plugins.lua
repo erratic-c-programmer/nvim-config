@@ -1,6 +1,5 @@
 return require('packer').startup(function()
   use "EdenEast/nightfox.nvim"
-  use "neovimhaskell/haskell-vim"
   use {
     "feline-nvim/feline.nvim",
     requires={ "kyazdani42/nvim-web-devicons" },
@@ -9,6 +8,7 @@ return require('packer').startup(function()
   use "LionC/nest.nvim"
   use { "ms-jpq/coq_nvim", branch="coq", requires={ "ms-jpq/coq.artifacts" }, run={ ":COQdeps" } }
   use "neovim/nvim-lspconfig"
+  use "neovimhaskell/haskell-vim"
   use { "nvim-treesitter/nvim-treesitter", run=":TSUpdate" }
   use { "p00f/nvim-ts-rainbow" }
   use "sainnhe/everforest"
