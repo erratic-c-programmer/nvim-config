@@ -1,5 +1,6 @@
 return require('packer').startup(function()
   use "EdenEast/nightfox.nvim"
+  use "neovimhaskell/haskell-vim"
   use {
     "feline-nvim/feline.nvim",
     requires={ "kyazdani42/nvim-web-devicons" },
