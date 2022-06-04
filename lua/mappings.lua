@@ -25,13 +25,13 @@ nest.applyKeymaps {
 			{ "d", "<cmd>lua vim.lsp.buf.definition()<CR>" },
 			{ "r", "<cmd>lua vim.lsp.buf.rename()<CR>" },
 			{ "a", "<cmd>lua vim.lsp.buf.code_action()<CR>" },
-		}}
+		}},
 
-    {"f", { -- telescope
-      { "f" "<cmd>lua require('telescope.builtin').find_files()<cr>" },
-      { "g" "<cmd>lua require('telescope.builtin').live_grep()<cr>" },
-      { "b" "<cmd>lua require('telescope.builtin').buffers()<cr>" },
-      { "h" "<cmd>lua require('telescope.builtin').help_tags()<cr>" },
-    }}
+		--{"f", { -- telescope
+			--{ "f" "<cmd>lua require('telescope.builtin').find_files()<cr>" },
+			--{ "g" "<cmd>lua require('telescope.builtin').live_grep()<cr>" },
+			--{ "b" "<cmd>lua require('telescope.builtin').buffers()<cr>" },
+			--{ "h" "<cmd>lua require('telescope.builtin').help_tags()<cr>" },
+		--}}
 	}}
 }
