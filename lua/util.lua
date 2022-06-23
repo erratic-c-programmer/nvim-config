@@ -2,11 +2,7 @@ local M = {}
 
 -- really simple ft autocmd constructor
 function M.ft_autocmd(ft, options)
-	local s = "autocmd FileType " .. ft .. " setlocal "
-	for i, v in ipairs(options) do
-		s = s .. v .. " "
-	end
-	return s
+	return "autocmd FileType " .. ft .. " setlocal " .. options
 end
 
 function M.ft_autocmd_(ft, options)
@@ -15,11 +11,11 @@ end
 
 -- convenience function to construct indentation-setting autocmd fragment
 function M.au_indent(lvl)
-	m = {}
+  s = ""
 	for i, v in ipairs({ "tabstop", "shiftwidth", "softtabstop" }) do
-		m[i] = v .. "=" .. lvl
+		s = v .. "=" .. lvl
 	end
-	return m
+	return s
 end
 
 return M
